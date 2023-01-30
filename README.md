@@ -3,7 +3,7 @@
 個人 Eugene UI 網頁作品集
 
 ## Screenshot
-![alt cover]()
+![alt cover](https://github.com/CharlesSin/Eugene-UI-Webpage/blob/master/public/images/cover.jpg)
 
 ## Demo
 
