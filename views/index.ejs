@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="google-site-verification" content="HnJtE_sZt341dJGdcOQMZwz4DuRUYbEVpshuRKqxrIM" />
+  <title>Dashboard</title>
+  <link href="./css.css" rel="stylesheet">
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/forms/toggle/switchery.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/plugins/forms/switch.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/core/colors/palette-switch.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/charts/chartist.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/charts/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/file-uploaders/dropzone.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/forms/icheck/icheck.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/forms/icheck/custom.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/timeline/vertical-timeline.css">
+  <!-- END: Vendor CSS-->
+
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/colors.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/components.min.css">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/core/menu/menu-types/vertical-menu.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/core/colors/palette-gradient.min.css">
+  <link rel="stylesheet" type="text/css" href="./fonts/simple-line-icons/style.min.css">
+  <link rel="stylesheet" type="text/css" href="./fonts/feather/style.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/core/colors/palette-gradient.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/timeline/timeline.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendor/css/file-uploaders/dropzone.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/pages/dashboard-ecommerce.min.css">
+  <!-- END: Page CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar pace-done menu-expanded" data-open="click"
+  data-menu="vertical-menu" data-color="bg-chartbg" data-col="2-columns">
+  <div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+      style="transform: translate3d(100%, 0px, 0px);">
+      <div class="pace-progress-inner">
+      </div>
+    </div>
+    <div class="pace-activity"></div>
+  </div>
+
+  <!-- BEGIN: Header-->
+  <nav
+    class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+    <div class="navbar-wrapper">
+      <div class="navbar-container content">
+        <div class="collapse navbar-collapse show" id="navbar-mobile">
+          <ul class="nav navbar-nav mr-auto float-left">
+            <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+                href="#"><i class="ft-menu font-large-1"></i></a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                  class="ft-menu"></i></a></li>
+            <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i
+                  class="ficon ft-maximize"></i></a></li>
+            <li class="dropdown nav-item mega-dropdown d-none d-md-block"><a class="dropdown-toggle nav-link" href="#"
+                data-toggle="dropdown">Mega</a>
+              <ul class="mega-dropdown-menu dropdown-menu row">
+                <li class="col-md-2">
+                  <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="ft-link"></i> Quick Links</h6>
+                  <ul>
+                    <li><a class="my-1" href="chat-application.html"><i class="ft-home"></i> Chat</a></li>
+                    <li><a class="my-1" href="table-bootstrap.html"><i class="ft-grid"></i> Tables</a></li>
+                    <li><a class="my-1" href="chartist-charts.html"><i class="ft-bar-chart"></i> Charts</a></li>
+                    <li><a class="my-1" href="gallery-grid.html"><i class="ft-sidebar"></i> Gallery</a></li>
+                  </ul>
+                </li>
+                <li class="col-md-3">
+                  <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="ft-star"></i> My Bookmarks</h6>
+                  <ul class="ml-2">
+                    <li class="list-style-circle"><a class="my-1" href="card-bootstrap.html">
+                        Cards</a></li>
+                    <li class="list-style-circle"><a class="my-1" href="full-calender.html"> Calender</a></li>
+                    <li class="list-style-circle"><a class="my-1" href="invoice-template.html"> Invoice</a></li>
+                    <li class="list-style-circle"><a class="my-1" href="users-contacts.html"> Contact</a></li>
+                  </ul>
+                </li>
+                <li class="col-md-3">
+                  <h6 class="dropdown-menu-header text-uppercase">
+                    <i class="ft-layers"></i> Recent Products
+                  </h6>
+                  <div class="carousel slide pt-1" id="carousel-example" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active carousel-item-left">
+                        <img class="d-block w-100" src="./images/carousel/01.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item carousel-item-next carousel-item-left">
+                        <img class="d-block w-100" src="./images/carousel/02.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/carousel/03.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                      <span class="la la-angle-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                      <span class="la la-angle-right icon-next" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <h5 class="pt-1">Special title treatment</h5>
+                    <p>Jelly beans sugar plum.</p>
+                  </div>
+                </li>
+                <li class="col-md-4">
+                  <h6 class="dropdown-menu-header text-uppercase mb-1">
+                    <i class="ft-thumbs-up"></i> Get in touch
+                  </h6>
+                  <form class="form form-horizontal pt-1">
+                    <div class="form-body">
+                      <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" for="inputName1">Name</label>
+                        <div class="col-sm-9">
+                          <div class="position-relative has-icon-left">
+                            <input class="form-control" id="inputName1" type="text" placeholder="John Doe">
+                            <div class="form-control-position pl-1">
+                              <i class="ft-user"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" for="inputContact1">Contact</label>
+                        <div class="col-sm-9">
+                          <div class="position-relative has-icon-left">
+                            <input class="form-control" id="inputContact1" type="text" placeholder="(123)-456-7890">
+                            <div class="form-control-position pl-1">
+                              <i class="ft-smartphone"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" for="inputEmail1">Email</label>
+                        <div class="col-sm-9">
+                          <div class="position-relative has-icon-left">
+                            <input class="form-control" id="inputEmail1" type="email" placeholder="john@example.com">
+                            <div class="form-control-position pl-1">
+                              <i class="ft-mail"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" for="inputMessage1">Message</label>
+                        <div class="col-sm-9">
+                          <div class="position-relative has-icon-left">
+                            <textarea class="form-control" id="inputMessage1" rows="2"
+                              placeholder="Simple Textarea"></textarea>
+                            <div class="form-control-position pl-1">
+                              <i class="ft-message-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 mb-1">
+                          <button class="btn btn-danger float-right" type="button">
+                            <i class="ft-arrow-right"></i>Submit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown d-none d-md-block mr-1">
+              <a class="dropdown-toggle nav-link" id="apps-navbar-links" href="#" data-toggle="dropdown">
+                Apps</a>
+              <div class="dropdown-menu">
+                <div class="arrow_box">
+                  <a class="dropdown-item" href="#">
+                    <i class="ft-user"></i> Email
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="ft-mail"></i> Chat
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="ft-briefcase"></i> Project Summary
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="ft-calendar"></i> Calendar
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown navbar-search">
+              <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#">
+                <i class="ficon ft-search"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="arrow_box">
+                  <form>
+                    <div class="input-group search-box">
+                      <div class="position-relative has-icon-right full-width">
+                        <input class="form-control" id="search" type="text" placeholder="Search here...">
+                        <div class="form-control-position navbar-search-close">
+                          <i class="ft-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav float-right">
+            <li class="dropdown dropdown-language nav-item">
+              <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="flag-icon flag-icon-us"></i>
+                <span class="selected-language"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                <div class="arrow_box">
+                  <a class="dropdown-item" href="#">
+                    <i class="flag-icon flag-icon-us"></i> English
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="flag-icon flag-icon-cn"></i> Chinese
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="flag-icon flag-icon-ru"></i> Russian
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="flag-icon flag-icon-fr"></i> French
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="flag-icon flag-icon-es"></i> Spanish
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown dropdown-notification nav-item">
+              <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                <i class="ficon ft-bell bell-shake" id="notification-navbar-link"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                <div class="arrow_box_right">
+                  <li class="dropdown-menu-header">
+                    <h6 class="dropdown-header m-0">
+                      <span class="grey darken-2">Notifications</span>
+                    </h6>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-notification nav-item">
+              <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                <i class="ficon ft-mail"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                <div class="arrow_box_right">
+                  <li class="dropdown-menu-header">
+                    <h6 class="dropdown-header m-0">
+                      <span class="grey darken-2">Messages</span>
+                    </h6>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-user nav-item">
+              <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                <span class="avatar avatar-online">
+                  <img src="./images/5.jpg" alt="avatar">
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="arrow_box_right">
+                  <a class="dropdown-item" href="#">
+                    <span class="avatar avatar-online">
+                      <span class="user-name text-bold-700 ml-1">Charles Sin</span>
+                    </span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="user"></i> Edit Profile</a>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="mail"></i> My Inbox</a>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="check-square"></i> Task</a>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="message-square"></i> Chats</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i data-feather="power"></i> Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: Header-->
+
+  <!-- BEGIN: Main Menu-->
+  <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true"
+    data-img="./images/backgrounds/04.jpg">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav flex-row">
+        <li class="nav-item mr-auto">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-home fa-lg"></i>
+            <h3 class="brand-text"> Charles Blog </h3>
+          </a>
+        </li>
+        <li class="nav-item d-md-none">
+          <a class="nav-link close-navbar">
+            <i class="ft-x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation-background" style="background-image: url(&quot;./images/backgrounds/04.jpg&quot;);"></div>
+    <div class="main-menu-content ps ps--active-y" style="height: 652px;">
+      <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="ft-aperture"></i>
+            <span class="menu-title" data-i18n="">Background</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/bg_color_animation">BG_Animation</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/bg_image_onhover">BG_Image</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/bg_video">BG_Video</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/cardslider">Card Slider</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/B&W_Mode">Day & Night mode</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/hovereffect">Hover Effect</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/scrollanimation">Scroll Animation</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/splitscreen">Split Screen</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/waterripple">Water Ripple</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="icon-clock"></i>
+            <span class="menu-title" data-i18n="">Clock</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/clock">Clock Example</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/timer">Timer JS</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/calculator">
+            <i class="icon-calculator"></i>
+            <span class="menu-title" data-i18n="">Calculator Example</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/datepicker">
+            <i class="icon-calendar"></i>
+            <span class="menu-title" data-i18n="">Date Picker</span>
+          </a>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="ft-edit"></i>
+            <span class="menu-title" data-i18n="">Forms</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/form_alert">Form & Alert</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/form_script">Form & Javascript</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/multi_SF">Multistep Form</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/validate_form">Validate Form</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="icon-picture"></i>
+            <span class="menu-title" data-i18n="">Images</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/img_gallery">Image Gallery</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/load_image">Lazy Load Img</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="icon-drop"></i>
+            <span class="menu-title" data-i18n="">Navs</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/dropdown_menu_1">Dropdown Menu 01</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/dropdown_menu_2">Dropdown Menu 02</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/dropdown_menu_3">Dropdown Menu 03</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/navbar">Navbar & Dropdown</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/navbar_view">Navbar view</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/side_nav">Side Nav</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/vertical_menu">Vertical Menu</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="icon-login"></i>
+            <span class="menu-title" data-i18n="">Login Form</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/login_page">Login 01</a>
+            </li>
+            <li><a class="menu-item" href="/login_form">Login 02</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/list">
+            <i class="icon-list"></i>
+            <span class="menu-title" data-i18n="">List</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/loding">
+            <i class="ft-more-horizontal"></i>
+            <span class="menu-title" data-i18n="">Loding Animation</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/menuhover">
+            <i class="ft-menu"></i>
+            <span class="menu-title" data-i18n="">Menu Hover</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/musicbeats">
+            <i class="ft-music"></i>
+            <span class="menu-title" data-i18n="">Music Beats</span>
+          </a>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="icon-user"></i>
+            <span class="menu-title" data-i18n="">Blog</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/personal_blog">Personal Blog</a>
+            </li>
+            <li><a class="menu-item" href="/pricingtable">Portfolio</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/phone_UI">
+            <i class="icon-screen-smartphone"></i>
+            <span class="menu-title" data-i18n="">Phone UI</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/searchbtn">
+            <i class="ft-search"></i>
+            <span class="menu-title" data-i18n="">Search Button</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/sign_up">
+            <i class="ft-user-plus"></i>
+            <span class="menu-title" data-i18n="">Sign Up</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/socialmediaicon">
+            <i class="icon-ghost"></i>
+            <span class="menu-title" data-i18n="">Social Media Icon</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/sunrise">
+            <i class="ft-sunrise"></i>
+            <span class="menu-title" data-i18n="">Sunrise</span>
+          </a>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="ft-grid"></i>
+            <span class="menu-title" data-i18n="">Tables</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/pricingtable">Pricing Table</a>
+            </li>
+            <li><a class="menu-item" href="/table">Table Example</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-sub">
+          <a href="#">
+            <i class="ft-italic"></i>
+            <span class="menu-title" data-i18n="">Text</span>
+          </a>
+          <ul class="menu-content">
+            <li>
+              <a class="menu-item" href="/text_animation_1">Text Animation 01</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/text_animation_2">Text Animation 02</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/text_animation_3">Text Animation 03</a>
+            </li>
+            <li>
+              <a class="menu-item" href="/text_animation_4">Text Animation 04</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/team_section">
+            <i class="ft-users"></i>
+            <span class="menu-title" data-i18n="">Team Section</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/youtube_example">
+            <i class="icon-social-youtube"></i>
+            <span class="menu-title" data-i18n="">Youtube Player</span>
+          </a>
+        </li>
+      </ul>
+      <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+      </div>
+      <div class="ps__rail-y" style="top: 0px; height: 652px; right: 0px;">
+        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 406px;"></div>
+      </div>
+      <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+      </div>
+      <div class="ps__rail-y" style="top: 0px; height: 652px; right: 0px;">
+        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 406px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Main Menu-->
+
+  <!-- BEGIN: Content-->
+  <div class="app-content content">
+    <div class="content-wrapper">
+      <div class="content-wrapper-before"></div>
+      <div class="content-header row"></div>
+      <div class="content-body">
+
+        <!-- Product Summary and Chat -->
+        <div class="row match-height">
+          <div class="col-xl-8 col-lg-12">
+            <h5 class="card-title text-bold-700 my-2" style="color: aliceblue">Product Summary</h5>
+            <div class="card" style="height: 340.8px;">
+              <div class="card-content">
+                <div id="product-summary" class="media-list position-relative">
+                  <div class="table-responsive">
+                    <table class="table table-padded table-xl mb-0" id="product-summary-table">
+                      <thead>
+                        <tr>
+                          <th class="border-top-0">Product</th>
+                          <th class="border-top-0">Brand</th>
+                          <th class="border-top-0">Category</th>
+                          <th class="border-top-0">Sales</th>
+                          <th class="border-top-0">Stock level</th>
+                          <th class="border-top-0">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-truncate">iPhone X</td>
+                          <td class="text-truncate">
+                            <a href="#">Apple</a>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-outline-danger round" type="button">Mobile</button>
+                          </td>
+                          <td class="text-truncate">
+                            <span>
+                              <i class="success" data-feather="arrow-up"></i> 6.89%
+                            </span>
+                          </td>
+                          <td>
+                            <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                              <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 25%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-truncat mr-1">
+                            <a href="#">
+                              <i class="blue-grey lighten-2 font-medium-5 ml-1" data-feather="shopping-cart"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-truncate">Shoes</td>
+                          <td class="text-truncate">
+                            <a href="#">Nike</a>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-outline-warning round" type="button">Fashion</button>
+                          </td>
+                          <td class="text-truncate">
+                            <span>
+                              <i class="danger" data-feather="arrow-down"></i> 5.15%
+                            </span>
+                          </td>
+                          <td>
+                            <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                              <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 75%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-truncat mr-1">
+                            <a href="#">
+                              <i class="blue-grey lighten-2 font-medium-5 ml-1" data-feather="shopping-cart"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-truncate">OnePlus</td>
+                          <td class="text-truncate">
+                            <a href="#">MI</a>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-outline-danger round" type="button">Mobile</button>
+                          </td>
+                          <td class="text-truncate">
+                            <span>
+                              <i class="success" data-feather="arrow-up"></i> 9.89%
+                            </span>
+                          </td>
+                          <td>
+                            <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                              <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-truncat mr-1">
+                            <a href="#">
+                              <i class="blue-grey lighten-2 font-medium-5 ml-1" data-feather="shopping-cart"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-truncate">Watch</td>
+                          <td class="text-truncate">
+                            <a href="#">Rolex</a>
+                          </td>
+                          <td>
+                            <button class="btn btn-sm btn-outline-success round" type="button">Watch</button>
+                          </td>
+                          <td class="text-truncate">
+                            <span>
+                              <i class="success" data-feather="arrow-up"></i> 15.89%
+                            </span>
+                          </td>
+                          <td>
+                            <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                              <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 90%"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                            </div>
+                          </td>
+                          <td class="text-truncat mr-1">
+                            <a href="#">
+                              <i class="blue-grey lighten-2 font-medium-5 ml-1" data-feather="shopping-cart"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-12">
+            <h5 class="card-title text-bold-700 my-2" style="color: aliceblue">Order Activity</h5>
+            <div class="card" style="height: 340.8px;">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="col-12 timeline-left" id="activity">
+                    <div class="timeline pt-2">
+                      <ul class="list-unstyled base-timeline activity-timeline">
+                        <li class="">
+                          <div class="timeline-icon bg-danger">
+                            <i class="ft-map-pin font-medium-1"></i>
+                          </div>
+                          <div class="act-time">Today</div>
+                          <div class="base-timeline-info">
+                            <a href="#" class="text-danger">Delivered</a>
+                          </div>
+                          <small class="text-muted">25 mins ago</small>
+                        </li>
+                        <li class="">
+                          <div class="timeline-icon bg-primary">
+                            <i class="ft-shopping-cart font-medium-1"></i>
+                          </div>
+                          <div class="act-time">Yesterday</div>
+                          <div class="base-timeline-info">
+                            <a href="#" class="text-primary">In Transit</a>
+                          </div>
+                          <small class="text-muted">23 hours ago</small>
+                        </li>
+                        <li class="">
+                          <div class="timeline-icon bg-dark">
+                            <i class="ft-box font-medium-1"></i>
+                          </div>
+                          <div class="act-time">05 March</div>
+                          <div class="base-timeline-info">
+                            <a href="#" class="text-dark">Dispatched</a>
+                          </div>
+                          <small class="text-muted">4 days ago</small>
+                        </li>
+                        <li class="">
+                          <div class="timeline-icon bg-warning">
+                            <i class="ft-user font-medium-1"></i>
+                          </div>
+                          <div class="act-time">04 March</div>
+                          <div class="base-timeline-info">
+                            <a href="#" class="text-warning">Order Received</a>
+                          </div>
+                          <small class="text-muted">5 days ago</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Products sell and New Orders -->
+
+        <!-- Statistics -->
+        <div class="row">
+          <div class="col-xl-4 col-lg-12">
+            <div class="card">
+              <div class="card-header ">
+                <h4 class="card-title">Customer Stats</h4>
+                <a class="heading-elements-toggle">
+                  <i class="la la-ellipsis-v font-medium-3"></i>
+                </a>
+                <div class="heading-elements">
+                  <ul class="list-inline mb-0">
+                    <li>
+                      <a data-action="reload">
+                        <i data-feather="rotate-cw"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-body text-center">
+                  <div class="card-header pt-0 pb-0">
+                    <p class="danger darken-2">Total Customers</p>
+                    <h3 class="display-4 blue-grey lighten-2">0</h3>
+                  </div>
+                  <div class="card-content">
+                    <div id="new-customers" class="height-150 donutShadow">
+                      <svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%"
+                        class="ct-chart-donut" style="width: 100%; height: 100%;">
+                        <g class="ct-series ct-series-a">
+                          <path d="M168.582,5A70,70,0,1,0,168.594,5L168.594,15A60,60,0,1,1,168.583,15Z"
+                            class="ct-slice-donut-solid" ct:value="100">
+                          </path>
+                        </g>
+                        <g>
+                          <text dx="168.59375" dy="82.1015625" text-anchor="middle" class="ct-label"
+                            font-family="feather">
+                          </text>
+                        </g>
+                        <defs>
+                          <lineargradient id="donutGradient5" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="rgba(253,99,107,1)"></stop>
+                            <stop offset="95%" stop-color="rgba(253,99,107, 0.3)"></stop>
+                          </lineargradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <ul class="list-inline clearfix mt-2">
+                      <li>
+                        <h1 class="blue-grey lighten-2 text-bold-400">0</h1>
+                        <span class="danger darken-2">
+                          <i data-feather="user"></i> Average New Customers
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-12">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-body">
+                  <h4 class="card-title">Recent products</h4>
+                  <h6 class="card-subtitle text-muted">Carousel Card With Header &amp; Footer</h6>
+                </div>
+                <div id="carousel-area" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-area" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-area" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-area" data-slide-to="2" class=""></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item carousel-item-next carousel-item-left">
+                      <img src="./images/carousel/08.jpg" class="d-block w-100" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/carousel/03.jpg" class="d-block w-100" alt="Second slide">
+                    </div>
+                    <div class="carousel-item active carousel-item-left">
+                      <img src="./images/carousel/01.jpg" class="d-block w-100" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+                    <span class="la la-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#" role="button" data-slide="next">
+                    <span class="la la-angle-right icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card-footer border-top-blue-grey border-top-lighten-5 text-muted">
+                <span class="float-left">2 days ago</span>
+                <span class="tags float-right">
+                  <span class="badge badge-pill badge-primary">Branding</span>
+                  <span class="badge badge-pill badge-danger">Design</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Recent Buyers</h4>
+                <a class="heading-elements-toggle">
+                  <i class="fa fa-ellipsis-v font-medium-3"></i>
+                </a>
+                <div class="heading-elements">
+                  <ul class="list-inline mb-0">
+                    <li>
+                      <a data-action="reload">
+                        <i data-feather="rotate-cw"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <div id="recent-buyers" class="media-list">
+                  <a href="#" class="media border-0">
+                    <div class="media-left pr-1">
+                      <span class="avatar avatar-md avatar-online">
+                        <img class="media-object rounded-circle" src="./images/portrait/small/avatar-s-7.png"
+                          alt="Generic placeholder image">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-body w-100">
+                      <span class="list-group-item-heading">Kristopher Candy</span>
+                      <ul class="list-unstyled users-list m-0 float-right">
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 1"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-1.jpg" alt="Avatar">
+                        </li>
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 2"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-2.jpg" alt="Avatar">
+                        </li>
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 3"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-4.jpg" alt="Avatar">
+                        </li>
+                      </ul>
+                      <p class="list-group-item-text mb-0">
+                        <span class="blue-grey lighten-2 font-small-3"> #INV-12332 </span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="media border-0">
+                    <div class="media-left pr-1">
+                      <span class="avatar avatar-md avatar-away">
+                        <img class="media-object rounded-circle" src="./images/portrait/small/avatar-s-8.png"
+                          alt="Generic placeholder image">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-body w-100">
+                      <span class="list-group-item-heading">Lawrence Fowler</span>
+                      <ul class="list-unstyled users-list m-0 float-right">
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 1"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-5.jpg" alt="Avatar">
+                        </li>
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 2"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-6.jpg" alt="Avatar">
+                        </li>
+                      </ul>
+                      <p class="list-group-item-text mb-0">
+                        <span class="blue-grey lighten-2 font-small-3"> #INV-12333 </span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="media border-0">
+                    <div class="media-left pr-1">
+                      <span class="avatar avatar-md avatar-busy">
+                        <img class="media-object rounded-circle" src="./images/portrait/small/avatar-s-9.png"
+                          alt="Generic placeholder image">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-body w-100">
+                      <span class="list-group-item-heading">Linda Olson</span>
+                      <ul class="list-unstyled users-list m-0 float-right">
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 1"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-2.jpg" alt="Avatar">
+                        </li>
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 2"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-5.jpg" alt="Avatar">
+                        </li>
+                      </ul>
+                      <p class="list-group-item-text mb-0">
+                        <span class="blue-grey lighten-2 font-small-3"> #INV-12334 </span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="media border-0">
+                    <div class="media-left pr-1">
+                      <span class="avatar avatar-md avatar-online">
+                        <img class="media-object rounded-circle" src="./images/portrait/small/avatar-s-10.png"
+                          alt="Generic placeholder image">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-body w-100">
+                      <span class="list-group-item-heading">Roy Clark</span>
+                      <ul class="list-unstyled users-list m-0 float-right">
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 1"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-6.jpg" alt="Avatar">
+                        </li>
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 2"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-1.jpg" alt="Avatar">
+                        </li>
+                      </ul>
+                      <p class="list-group-item-text mb-0">
+                        <span class="blue-grey lighten-2 font-small-3"> #INV-12335 </span>
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="media border-0">
+                    <div class="media-left pr-1">
+                      <span class="avatar avatar-md avatar-online">
+                        <img class="media-object rounded-circle" src="./images/portrait/small/avatar-s-11.png"
+                          alt="Generic placeholder image">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-body w-100">
+                      <span class="list-group-item-heading">Kristopher Candy</span>
+                      <ul class="list-unstyled users-list m-0 float-right">
+                        <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Product 1"
+                          class="avatar avatar-sm pull-up">
+                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius"
+                            src="./images/portfolio/portfolio-5.jpg" alt="Avatar">
+                        </li>
+                      </ul>
+                      <p class="list-group-item-text mb-0">
+                        <span class="blue-grey lighten-2 font-small-3"> #INV-12336 </span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Statistics -->
+      </div>
+    </div>
+  </div>
+  <!-- END: Content-->
+
+  <!-- BEGIN: Footer-->
+  <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+    <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+      <span class="float-md-left d-block d-md-inline-block">2019 © Copyright
+        <a class="text-bold-800 grey darken-2" href="#">C&C Workshop</a>
+      </span>
+    </div>
+  </footer>
+  <!-- END: Footer-->
+
+  <!-- BEGIN: Vendor JS-->
+  <script src="./vendor/js/vendors.min.js" type="text/javascript"></script>
+  <script src="./vendor/js/forms/toggle/switchery.min.js" type="text/javascript"></script>
+  <script src="./javascripts/scripts/forms/switch.min.js" type="text/javascript"></script>
+  <!-- END Vendor JS-->
+
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="./vendor/js/timeline/horizontal-timeline.js" type="text/javascript"></script>
+  <script src="./vendor/js/extensions/dropzone.min.js" type="text/javascript"></script>
+  <script src="./vendor/js/forms/icheck/icheck.min.js" type="text/javascript"></script>
+  <!-- END: Page Vendor JS-->
+
+  <!-- BEGIN: Theme JS-->
+  <script src="./javascripts/core/app-menu.min.js" type="text/javascript"></script>
+  <script src="./javascripts/core/app.min.js" type="text/javascript"></script>
+  <script src="./javascripts/scripts/customizer.min.js" type="text/javascript"></script>
+  <script src="./vendor/js/jquery.sharrre.js" type="text/javascript"></script>
+  <!-- END: Theme JS-->
+
+  <!-- END: Body-->
+</body>
+
+</html>
